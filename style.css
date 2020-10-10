@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@300&display=swap');
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Piazzolla', serif;
+  background-color: #696969;
+  box-sizing: border-box;
+}
+
+h1 {
+  color:white;
+  text-decoration: underline;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 2% auto;
+  display: flex;
+  padding: 1%;
+  background-color: #C0C0C0;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap:nowrap;
+}
+
+.imgcont,.infocont {
+  flex:1;
+  margin: 5px;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.btncont {
+  text-align: center;
+  width: 100%;
+
+}
+
+.btn-tab{
+  background-color: #808080;
+  color: white;
+  width: 30%;
+  height: 30px;
+  border: none;
+  margin:0 -2px;
+  border-radius: 5px 5px 0 0;
+}
+
+.btn-tab:focus {
+  outline:none;
+}
+
+.btn-tab.active{
+  background-color: white;
+  color:black;
+}
+
+.article-info {
+  padding: 10px;
+  display: none;
+  text-align: justify;
+}
+
+.article-info.active {
+  background-color: white;
+  color:black;
+  display: block;
+  height: 100%;
+  border-radius: 5px;
+}
+
+ @media only screen and (max-width: 900px) {
+
+.container {
+  display: block;
+}
+
+ }
